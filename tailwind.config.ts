@@ -13,6 +13,7 @@ const config: Config = {
       },
       fontFamily: {
         satoshi: ["var(--font-satoshi)"],
+        monument: ["var(--font-monument)"],
       },
     },
   },

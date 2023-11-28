@@ -5,6 +5,22 @@ import localFont from 'next/font/local'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const monument = localFont({
+  src: [
+    {
+      path: '../assets/fonts/monument/MonumentExtended-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/monument/MonumentExtended-Ultrabold.otf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-monument'
+})
+
 const satoshi = localFont({
   src: [
     {
@@ -48,7 +64,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${satoshi.variable}`}>{children}</body>
+      <body className={`${inter.className} ${satoshi.variable} ${monument.variable}`}>{children}</body>
     </html>
   )
 }
