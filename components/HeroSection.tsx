@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 function HeroSection() {
     return (
-        <div className='h-[100vh] relative bg-hero-bg bg-cover bg-center mb-[114px]'>
+        <div className='h-[100vh] relative bg-hero-bg bg-cover bg-center mb-[80px] md:mb-[114px]'>
             <div className="absolute inset-0">
                 <div className="h-[500px] w-full absolute bottom-0 left-[0%] bg-gradient-to-t from-black to-transparent"></div>
             </div>

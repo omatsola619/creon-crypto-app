@@ -1,12 +1,13 @@
-import CreonPass from '@/components/CreonPass'
+import Section2 from '@/components/Section2'
 import HeroSection from '@/components/HeroSection'
-import Navbar from '@/components/Navbar'
+import Section3 from '@/components/Section3'
 
 export default function Home() {
   return (
     <main className="">
       <HeroSection />
-      <CreonPass />
+      <Section2 />
+      <Section3 />
     </main >
   )
 }
