@@ -13,8 +13,7 @@ function HeroSection() {
 
             {/* large intro text  */}
             <div className='absolute top-[40%] md:top-[50%] lg:left-[10%] px-5 sm:px-10 flex-col items-center'>
-                <div className='text-white text-[25px] sm:text-[40px] lg:text-[58px] font-monument w-[100%] sm:w-[70%] md:w-[100%] mb-[47px]'>The WORLDS first <br /> platform for Tokenizing AI <br /> blockchain projects</div>
-
+                <div className='text-white text-[25px] sm:text-[40px] lg:text-[58px] leading-[70px] font-monument w-[100%] sm:w-[70%] md:w-[100%] mb-[47px]'>The WORLDS first <br /> platform for Tokenizing AI <br /> blockchain projects</div>
                 <div
                     className='
                 text-transparent 
