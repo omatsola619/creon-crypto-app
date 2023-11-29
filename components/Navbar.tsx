@@ -22,7 +22,7 @@ const Navbar = () => {
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <Image src={logo} alt='' width={140} height={39} />
+                            <Image src={logo} alt='' width={120} height={39} />
                         </a>
                     </div>
                     <div className='flex flex-row gap-[15px]'>
