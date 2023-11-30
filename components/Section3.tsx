@@ -10,8 +10,8 @@ function Section3() {
                 <div className='text-transparent font-monument text-[16px] bg-clip-text bg-gradient-to-r from-[#3D8BFF] from-0% to-[#AB23FF] to-100% sm:text-[20px] lg:text-[28px] font-normal'>AI INNOBATION & DECENTRALIZATION</div>
             </div>
 
-            <div className='flex flex-col md:flex-row gap-2 items-center justify-center lg:justify-between md:border-r-[1px] border-[#13171D]'>
-                <div className="w-full md:border-r-[1px] pr-3 border-[#13171D]">
+            <div className='flex flex-col md:flex-row gap-2 items-center justify-center lg:justify-between'>
+                <div className="w-full pr-3">
                     <Image src={world} alt='' />
                 </div>
 
