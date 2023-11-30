@@ -1,5 +1,5 @@
 import React from 'react'
-import world from '../assets/image/world.png'
+import world from '../../assets/image/world.png'
 import Image from 'next/image'
 
 function Section3() {

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import staff from '../assets/image/staff.png'
+import staff from '../../assets/image/staff.png'
 
 const data = [
     'Pre-launch investment opportunities for upcoming AI projects',
