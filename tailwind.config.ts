@@ -16,6 +16,13 @@ const config: Config = {
         satoshi: ["var(--font-satoshi)"],
         monument: ["var(--font-monument)"],
       },
+      screens: {
+        xs: "425px",
+        sm: "640px", // You can adjust this value as needed
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+      },
     },
   },
   plugins: [],
