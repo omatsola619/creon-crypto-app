@@ -11,12 +11,12 @@ const Accordion = ({ title, content, image }: { title: string, content: string, 
     };
 
     return (
-        <div className='w-[430px]'>
-            <div className='py-3 px-3'>
+        <div className='w-full lg:w-[430px]'>
+            <div className='py-5 px-3'>
                 <div className='flex flex-row justify-between items-center cursor-pointer' onClick={toggleAccordion}>
                     <div className='flex flex-row gap-3 items-center'>
                         <Image src={image} alt='icon' width={70} height={70} />
-                        <h3 className='text-white'>{title}</h3>
+                        <h3 className='text-white font-satoshi text-base font-bold'>{title}</h3>
                     </div>
 
 
@@ -25,7 +25,7 @@ const Accordion = ({ title, content, image }: { title: string, content: string, 
                 </div>
                 {isExpanded && (
                     <div className='p-2'>
-                        <p className='text-white ml-[75px]'>{content}</p>
+                        <p className='text-white ml-[75px] text-sm font-satoshi'>{content}</p>
                     </div>
                 )}
             </div>
