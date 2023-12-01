@@ -3,6 +3,7 @@ import creonImg from '@/assets/image/creon.png'
 import Image from 'next/image'
 import Accordion from '../Accordion';
 import icon from '@/assets/image/acc1.svg'
+import { AccordionData } from '@/data';
 
 function Section4() {
     return (
@@ -20,9 +21,14 @@ function Section4() {
 
                 {/* right section  */}
                 <div className='my-10'>
-                    <div>
-                        <Accordion image={icon} title='what is accordion' content='the accordion is one which has different meaning' />
-                        <Accordion image={icon} title='what is accordion' content='the accordion is one which has different meaning' />
+                    <div className=''>
+                        {
+                            AccordionData.map(item => (
+                                <div className='border-b-[1px] border-[#13171D] last:border-none w-[430px]' key={item.title}>
+                                    <Accordion image={item.image} title={item.title} content={item.info} />
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

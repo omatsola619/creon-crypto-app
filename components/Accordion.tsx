@@ -11,9 +11,9 @@ const Accordion = ({ title, content, image }: { title: string, content: string, 
     };
 
     return (
-        <div className='w-[400px]'>
-            <div>
-                <div className='flex flex-row justify-between items-center cursor-pointer py-1 px-3 border-2' onClick={toggleAccordion}>
+        <div className='w-[430px]'>
+            <div className='py-3 px-3'>
+                <div className='flex flex-row justify-between items-center cursor-pointer' onClick={toggleAccordion}>
                     <div className='flex flex-row gap-3 items-center'>
                         <Image src={image} alt='icon' width={70} height={70} />
                         <h3 className='text-white'>{title}</h3>
@@ -21,11 +21,11 @@ const Accordion = ({ title, content, image }: { title: string, content: string, 
 
 
                     {/*TODO: set transition for this transform 0.2s and styles.rotate is transition: rotate(180deg) */}
-                    <span className={`font-[15px] text-white ${isExpanded ? 'rotate-180' : ''}`}><BsChevronDown /></span>
+                    <span className={`font-[15px] text-white ${isExpanded ? 'transform rotate-[180]' : ''}`}><BsChevronDown /></span>
                 </div>
                 {isExpanded && (
                     <div className='p-2'>
-                        <p className='text-white'>{content}</p>
+                        <p className='text-white ml-[75px]'>{content}</p>
                     </div>
                 )}
             </div>
