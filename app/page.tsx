@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection'
 import Section3 from '@/components/page-sections/Section3'
 import Section4 from '@/components/page-sections/Section4'
 import Section5 from '@/components/page-sections/Section5'
+import Section6 from '@/components/page-sections/Section6'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Section3 />
       <Section4 />
       <Section5 />
+      <Section6 />
     </main >
   )
 }
