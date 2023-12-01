@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function Section3() {
     return (
-        <div className='pt-[103px] pb-10 lg:pl-[80px] mx-4 sm:mx-10 lg:mx-[60px]'>
+        <div className='pt-[103px] pb-10 lg:px-[80px] mx-4 sm:mx-10 lg:mx-[60px]'>
             <div className='text-white font-monument text-[25px] sm:text-[40px] lg:text-[58px] font-normal'>PROFITING THROUGH</div>
             <div className='flex flex-row justify-end 2xl:justify-center mb-8'>
                 <div className='text-transparent font-monument text-[16px] bg-clip-text bg-gradient-to-r from-[#3D8BFF] from-0% to-[#AB23FF] to-100% sm:text-[20px] lg:text-[28px] font-normal'>AI INNOBATION & DECENTRALIZATION</div>

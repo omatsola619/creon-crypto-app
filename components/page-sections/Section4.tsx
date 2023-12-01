@@ -6,7 +6,7 @@ import { AccordionData } from '@/data';
 
 function Section4() {
     return (
-        <div className='h-full lg:h-[700px] mt-[150px] pb-14 lg:pl-[80px] mx-4 sm:mx-10 lg:mx-[60px]'>
+        <div className='h-full lg:h-[700px] mt-[150px] pb-14 lg:px-[80px] mx-4 sm:mx-10 lg:mx-[60px]'>
             <div className='flex flex-col lg:flex-row flex-start justify-between gap-16'>
                 {/* left section  */}
                 <div>
