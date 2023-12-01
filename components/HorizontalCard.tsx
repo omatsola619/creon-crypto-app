@@ -1,23 +1,24 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import img1 from '@/assets/image/horiz1.png'
 import Image from 'next/image';
+import { Feature2Type } from '@/data';
 
-function HorizontalCard() {
+const HorizontalCard: FunctionComponent<Feature2Type> = ({ title, description, image }) => {
     return (
-        <div className='flex flex-row items-center justify-between bg-[#0c0f11] bg-opacity-50'>
+        <div className='flex flex-col mb-8 sm:mb-3 sm:flex-row items-center justify-between bg-[#0c0f11] bg-opacity-50'>
             {/* left side */}
             <div className='flex-[0.7] p-4'>
-                <div className='text-white font-[28px] font-monument mb-2'>
-                    AI Prospects, Market Size, and Development Pace
+                <div className='text-white font-[18px] md:font-[28px] font-monument mb-2'>
+                    {title}
                 </div>
                 <div className='text-[10px] text-white font-satoshi'>
-                    The AI market is one of the most dynamically growing areas of technology. According to reports, the global AI market is expected to reach $190.61 billion by 2025, with a CAGR (Compound Annual Growth Rate) of 36.6%. The key drivers behind this growth include advancements in machine learning, increasing demand for big data analytics, and growing adoption of AI technology across various sectors such as healthcare, finance, and transportation.
+                    {description}
                 </div>
             </div>
 
             {/* right side  */}
             <div className='flex-[0.3]'>
-                <Image src={img1} alt='image' height={250} width={500} />
+                <Image src={image} alt='image' className='cover w-screen md:w-[500] h-[250]' />
             </div>
         </div>
     )
